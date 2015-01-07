@@ -1,3 +1,9 @@
-<h1>This is the articles#index placeholder. Yeah boyyyyy</h1>
+<h1>Articles Index</h1>
+
+<% @articles.each do |article| %>
+	<h2><%= article.title %></h2>
+	<p>Published at <%= article.created_at.localtime.strftime('%A, %B %-d, %Y at %l:%M %p') %></p>
+	<p><%= truncate(article.content, length: 200) %></p>
+<% end %>
 
 <%= link_to "New Article", new_article_path %>

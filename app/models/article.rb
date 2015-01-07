@@ -4,4 +4,5 @@ class Article
   
   field :title, type: String
   field :content, type: String
+  
 end
