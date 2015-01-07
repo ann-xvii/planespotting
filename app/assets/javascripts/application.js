@@ -16,19 +16,6 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
-/**
- * Created by Sallar Kaboli <sallar.kaboli@gmail.com>
- * @sallar
- * 
- * Released under the MIT License.
- * http://sallar.mit-license.org/
- * 
- * This document demonstrates three things:
- * 
- * - Creating a simple parallax effect on the content
- * - Creating a Medium.com-style blur on scroll image
- * - Getting scroll position using requestAnimationFrame for better performance
- */
 
 
 /**
