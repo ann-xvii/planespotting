@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Articles Index</h1>
 
 <% @articles.each do |article| %>
@@ -18,3 +19,4 @@ Logged in as: <%= current_user.name %> <br/> <%= link_to 'Log Out', logout_path,
 <% else %>
 <%= link_to 'Log In', login_path %>
 <% end %>
+</div>
