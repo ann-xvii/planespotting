@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+ruby '2.1.3'
 gem 'rails', '4.2.0'
 gem 'mongoid', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.3.1'
@@ -24,5 +25,11 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :production do
+	gem 'pg'
+	gem 'thin'
+	gem 'rails_12factor', '~> 0.0.3'
 end
 
