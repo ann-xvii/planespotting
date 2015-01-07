@@ -3,6 +3,7 @@ class User
   field :name, type: String
   field :email, type: String
   field :password_digest, type: String
+  has_many :articles
   attr_reader :password
 
   def password=(unencrypted_password)
