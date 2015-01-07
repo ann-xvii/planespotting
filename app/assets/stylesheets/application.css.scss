@@ -13,8 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bourbon/bourbon";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
 
 nav {
 	position: fixed;
