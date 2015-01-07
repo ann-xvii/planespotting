@@ -15,3 +15,12 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+nav {
+	position: fixed;
+	top: 0;
+}
+
+.container {
+	margin-top: 80px;
+}

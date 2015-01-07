@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+	<div class="navbar-header">
+		<!-- <a class="navbar-brand" href="#">Planespottr</a> -->
+		<%= link_to "Planespottr", articles_path, class: 'navbar-brand' %>
+	</div>
+	<div id="navbar">
+		<ul class="nav navbar-nav">
+			<li><%= link_to "Take Off", static_pages_home_path %></li>
+			<li><%= link_to "Articles", articles_path %></li>
+			<li><%= link_to "About", users_path %></li>
+			
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><%= link_to "Boarding", login_path %></li>
+		</ul>
+	</div>
+</div>
+</nav>
