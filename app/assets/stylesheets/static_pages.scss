@@ -188,7 +188,7 @@
 
 .image-wrap {
 position:relative;
-height:600px;
+height:500px;
 overflow:hidden
 }
 .regular, .blurred {
@@ -247,3 +247,40 @@ min-height: 600px;
   }
 
 
+#map-container {
+  border: 2px dashed black;
+}
+
+
+// d3 styling
+
+    #map {
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+    .background {
+      fill: none;
+      pointer-events: all;
+    }
+    #countries, #states {
+      fill: #cde;
+      stroke: #fff;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+    #countries .active, #states .active {
+      fill: #89a;
+    }
+    #cities {
+      stroke-width: 0;
+    }
+    .city {
+      fill: #345;
+      stroke: #fff;
+    }
+    pre.prettyprint {
+      border: 1px solid #ccc;
+      margin-bottom: 0;
+      padding: 9.5px;
+    }
+  

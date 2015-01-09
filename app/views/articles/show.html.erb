@@ -6,6 +6,6 @@
 <br/>
 <br/>
 <br/>
-<p>Written by: <%= @article.user.name %></p>
+<p>Written by: <%= link_to @article.user.name, user_path(@article.user_id) %></p>
 <%= link_to "Back", root_path %>
 </div>

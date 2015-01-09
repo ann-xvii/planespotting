@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require d3
+//= require topojson
 //= require_tree .
 
 
@@ -136,3 +138,17 @@ $(this).css('opacity', opacity);
 }
 
 $(document).bind('scroll', fader);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

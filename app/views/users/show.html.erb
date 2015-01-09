@@ -1,7 +1,15 @@
+
+
 <div class="container">
+
 <h1>Welcome, <%= @user.name %></h1>
 
 <div><%= image_tag @user.image.url(:full) %></div>
+
+<%= @articles.each do |x| %>
+	<p><%= x.title %></p>
+	<p><%= x.content %></p>
+<% end %>
 
 <div><%= link_to "Edit", edit_user_path(@user) %></div>
 <br />
