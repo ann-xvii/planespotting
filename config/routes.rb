@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get 'static_pages/home'
-  get 'countries.topo.json' => 'static_pages#index', as: :countries
+  get 'static_pages/load' => 'static_pages#load', as: :countries
 
   get "articles/" => "articles#index"
   get 'articles/new' => 'articles#new', as: :new_article

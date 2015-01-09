@@ -9,6 +9,7 @@ gem 'figaro'
 gem 'gdal'
 gem 'd3js-rails', '~> 3.1.6'
 gem 'topojson-rails'
+gem 'responders'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -44,3 +45,4 @@ gem 'rails_12factor'
 # Gemfile
 gem 'thin', group: :production
 gem 'bourbon'
+gem 'httparty'

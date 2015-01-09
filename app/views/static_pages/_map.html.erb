@@ -137,7 +137,7 @@ $(window).resize(function() {
 </script>
 
  -->
-<div id="map"></div>
+<div id="map"> <!-- @data --> </div>
 <script>
      var m_width = $("#map").width(),
         width = 938,
@@ -160,7 +160,7 @@ $(window).resize(function() {
         .attr("height", height)
         .on("click", country_clicked);
     var g = svg.append("g");
-    d3.json("countries.topo.json", function(error, us) {
+    d3.json("/countries.topo.json", function(error, us) {
       g.append("g")
         .attr("id", "countries")
         .selectAll("path")
@@ -199,7 +199,7 @@ $(window).resize(function() {
         var xyz = get_xyz(d);
         country = d;
         if (d.id  == 'USA' || d.id == 'JPN') {
-          d3.json("states_" + d.id.toLowerCase() + ".topo.json", function(error, us) {
+          d3.json("/states_" + d.id.toLowerCase() + ".topo.json", function(error, us) {
             g.append("g")
               .attr("id", "states")
               .selectAll("path")
@@ -229,7 +229,7 @@ $(window).resize(function() {
         state = d;
         country_code = state.id.substring(0, 3).toLowerCase();
         state_name = state.properties.name;
-        d3.json("cities_" + country_code + ".topo.json", function(error, us) {
+        d3.json("/cities_" + country_code + ".topo.json", function(error, us) {
           g.append("g")
             .attr("id", "cities")
             .selectAll("path")
