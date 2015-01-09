@@ -5,6 +5,7 @@ gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 
 gem 'fog'         # required for Amazon S3
 gem 'mini_magick' # for post-upload image processing
+gem 'figaro'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -34,8 +35,9 @@ group :development, :test do
 end
 
 group :production do
-	
 	gem 'rails_12factor', '~> 0.0.3'
 end
 
+# Gemfile
+gem 'thin', group: :production
 gem 'bourbon'
