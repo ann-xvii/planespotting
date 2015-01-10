@@ -17,10 +17,10 @@ class StaticPagesController < ApplicationController
     format.json { render :json => { 1 => "First", 2 => "Second"} }
   end
 
-  def load
-  	@data = File.read("app/assets/javascripts/countries.topo.json")
-  	render :json => @data
-  end
+  # def load
+  # 	@data = File.read("app/assets/javascripts/countries.topo.json")
+  # 	render :json => @data
+  # end
 end
 end
 

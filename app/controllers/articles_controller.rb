@@ -25,6 +25,10 @@ class ArticlesController < ApplicationController
 		end
 	end
 
+	def destroy
+		@article = current_user.articles.find(params[:id])
+	end
+
 	private
 
 	def find_article
