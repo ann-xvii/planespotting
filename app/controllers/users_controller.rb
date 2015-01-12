@@ -22,12 +22,12 @@ class UsersController < ApplicationController
 		end
 	end
 
-	def destroy
-		@user = User.find(params[:id])
-		@user.destroy
-		session.delete(:user_id)
-		redirect_to users_path
-	end
+	# def destroy
+	# 	@user = User.find(params[:id])
+	# 	@user.destroy
+	# 	session.delete(:user_id)
+	# 	redirect_to users_path
+	# end
 
 	def create
 		@user = User.new(user_params)
@@ -48,7 +48,7 @@ class UsersController < ApplicationController
 	private
 
 	def user_params 
-		params.require(:user).permit(:name, :email, :password, :image, :remove_image)
+		params.require(:user).permit(:name, :email, :password, :password_confirmation, :image, :remove_image)
 	end
 
 end
