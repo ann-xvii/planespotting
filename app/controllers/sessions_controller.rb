@@ -18,6 +18,7 @@ class SessionsController < ApplicationController
 
 	def destroy
 		session.delete(:user_id)
+		@current_user = 'The Aviator'
 		redirect_to articles_path
 	end
 end
