@@ -7,5 +7,10 @@ class Article
   mount_uploader :image, AvatarUploader
   
   belongs_to :user
+
+  validates :title, presence: true
+  validates :title, length: { minimum: 3 }
+  validates :content, presence: true
+  validates :content, length: { minimum: 5 }
   
 end

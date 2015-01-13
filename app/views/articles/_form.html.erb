@@ -1,8 +1,8 @@
 <div class="form">
 	<%= simple_form_for(@article, div: { class: 'form-horizontal' }) do |f| %>
-	<%= f.input :title %>
-	<%= f.input :content %>
-	<%= f.file_field :image %>
+	<%= f.input :title, class: 'form-control'%>
+	<%= f.input :content, class: 'form-control' %>
+	<%= f.file_field :image, class: 'form-control' %>
 	<%= f.button :submit, 'Submit' %>
 	<% end %>
 </div>
