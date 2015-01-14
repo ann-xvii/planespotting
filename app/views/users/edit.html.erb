@@ -1,4 +1,7 @@
-<div class="container form-group" style="width: 50%;">
+<div class="users-control edit">
+	
+
+<div class="container form-group">
 <br/>
 <h1>Edit Your Profile!</h1>
 <%= form_for @user do |f| %>
@@ -14,13 +17,14 @@
 		<%= f.label :image %>
 		<%= f.file_field :image, class: 'form-control' %>
 	</div>
-	<div>
-		<%= f.label :remove_image %>
-		<%= f.check_box :remove_image, class: 'form-control' %>
+	<div style="text-align: center">
+		<%= f.label :remove_image %><%= f.check_box :remove_image, class: 'form-control' %>
 		<%= image_tag @user.image.url(:full) %>	
 	</div>
 	<div>
-		<%= f.submit %>
+		<%= f.submit 'Update', class: 'btn btn-primary' %>
 	</div>
 <% end %> 
+</div>
+
 </div>

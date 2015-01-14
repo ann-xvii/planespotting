@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require masonry/jquery.masonry
 //= require bootstrap-sprockets
 //= require d3
 //= require topojson
@@ -25,31 +26,22 @@
 
 
 // var $container = $('#container');
-// // initialize
-// $container.masonry({
-//   columnWidth: 200,
-//   itemSelector: '.item'
+
+// // or with jQuery
+// // initialize Masonry
+// var $container = $('#container').masonry();
+// // layout Masonry again after all images have loaded
+// $container.imagesLoaded( function() {
+//   $container.masonry();
 // });
+
+
 
 // var msnry = $container.data('masonry');
 
 
 
 
-// // or with jQuery
-// var $container = $('#container');
-// // initialize Masonry after all images have loaded  
-// $container.imagesLoaded( function() {
-//   $container.masonry();
-// });
 
-
-// or with jQuery
-// initialize Masonry
-var $container = $('#container').masonry();
-// layout Masonry again after all images have loaded
-$container.imagesLoaded( function() {
-  $container.masonry();
-});
 
 

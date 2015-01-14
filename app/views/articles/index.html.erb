@@ -43,40 +43,41 @@
         </div>
 
     <!-- .........................SLIDE #3......................... -->
+
+
+
+
+
+
+
+
+    
     <!-- ......................... MASONRY BEGIN ......................... -->
-    <!-- ......................... MASONRY END ......................... -->
+    
 
     <div class="parallax__group">
-        <div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
-            <div class="item">...</div>
-            <div class="item">...</div>
-            <div class="item">...</div>
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4">
+                <% @articles.each do |article| %>
+                    <h2><%= article.title %></h2>
+                    <p>Published at <%= article.created_at.localtime.strftime('%A, %B %-d, %Y at %l:%M %p') %></p>
+                    <p><%= truncate(article.content, length: 200) %></p>
+                    <p><%= image_tag article.image.url(:thumb) %></p>
+                    <p><%= link_to "View", article_path(article) %></p>
+                <% end %>
+            </div>
+          </div> <!-- /row -->
 
-            <div class="js-masonry" data-masonry-options='{ "itemSelector": ".item", "columnWidth": 200 }'>
-          <div class="item"></div>
-          <div class="item"></div>
-          ...
-        </div>
-        </div>
-
+          <hr>
+        </div> <!-- /container -->
 
 
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- ......................... MASONRY END ......................... -->
 
     </div>
 </div>

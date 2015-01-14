@@ -40,6 +40,10 @@ class AvatarUploader < CarrierWave::Uploader::Base
     process :resize_to_fit => [32, 32]
   end
 
+  version :profile do  
+    process :resize_to_fit => [80, 80]
+  end
+
   version :full do
     process :resize_to_fit => [512, 384]
   end
