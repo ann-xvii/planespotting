@@ -179,6 +179,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    masonry-rails (0.2.4)
+      railties
     mime-types (2.4.3)
     mini_magick (4.0.1)
     mini_portile (0.6.2)
@@ -271,8 +273,6 @@ GEM
     simple_form (3.1.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
-    skrollr-rails (0.6.29)
-      rails (>= 3.1.0)
     slop (3.6.0)
     spring (1.2.0)
     sprockets (2.12.3)
@@ -326,6 +326,7 @@ DEPENDENCIES
   httparty
   jbuilder (~> 2.0)
   jquery-rails
+  masonry-rails
   mini_magick
   modernizr-rails
   mongoid (~> 4.0.0)
@@ -336,7 +337,6 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form (~> 3.1.0)
-  skrollr-rails
   spring
   thin
   topojson-rails

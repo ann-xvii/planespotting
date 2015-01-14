@@ -16,11 +16,18 @@
 //= require bootstrap-sprockets
 //= require d3
 //= require topojson
+
+
 //= require_tree .
 
 
-
-
+$(function(){
+  $('#container').masonry({
+    // options
+    itemSelector : '.item',
+    columnWidth : 240
+  });
+});
 
 
 

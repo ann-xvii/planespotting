@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ##### CarrierWave Gems #####
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
-gem 'skrollr-rails'
+gem 'masonry-rails'
 
 gem 'fog'         # required for Amazon S3
 gem 'mini_magick' # for post-upload image processing
