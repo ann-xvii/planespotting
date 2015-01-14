@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
+  resources :countries
+
   get 'static_pages/home'
-  get 'static_pages/load' => 'static_pages#load', as: :countries
+  get 'static_pages/load' => 'static_pages#load'
+  # , as: :countries
 
   get "articles/" => "articles#index"
   get 'articles/new' => 'articles#new', as: :new_article

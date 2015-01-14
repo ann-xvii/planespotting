@@ -1,8 +1,26 @@
-<hgroup class="hgroup">
-      <h1>Planespotting.</h1>
-      <!-- <h2>Choose life.</h2> -->
-</hgroup>
-<div class="image-wrap">
-	<div class="regular"></div>
-	<div class="blurred"></div>
+<div class="container">
+<h1>Articles Index</h1>
+
+<% @articles.each do |article| %>
+	<h2><%= article.title %></h2>
+	<p>Published at <%= article.created_at.localtime.strftime('%A, %B %-d, %Y at %l:%M %p') %></p>
+	<p><%= truncate(article.content, length: 200) %></p>
+	<p><%= image_tag article.image.url(:thumb) %></p>
+	<p><%= link_to "View", article_path(article) %></p>
+<% end %>
+
+
+
+<br />
+
+<br />
+
+<% if logged_in? %>
+	<%= link_to "New Article", new_article_path %>
+	Logged in as: <%= current_user.name %> <br/> <%= link_to 'Log Out', logout_path, method: :delete %>
+<% else %>
+	<%= link_to 'New Article', login_path %>
+	<br />
+	<%= link_to 'Log In', login_path %> -- or -- <%= link_to "Sign Up", signup_path %>
+<% end %>
 </div>

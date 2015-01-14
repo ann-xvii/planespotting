@@ -1,26 +1,20 @@
+<!-- HTML -->
+<!-- <section id="slide-1" class="homeSlide">
+    <div class="bcg"
+        data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide-1">
+        <div class="hsContainer">
+            <div class="hsContent"
+                data-center="opacity: 1"
+                data-106-top="opacity: 0"
+                data-anchor-target="#slide-1 h2">
+                <h2 id="planespotting">Planespotting<br>choose life.</h2>
+                <p>"This slide moves the image at a slower speed than page scroll"</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+<div class="plane-header"><%= image_tag("bcg_slide-3.jpg") %></div>
 <div class="container">
-<h1>Articles Index</h1>
-
-<% @articles.each do |article| %>
-	<h2><%= article.title %></h2>
-	<p>Published at <%= article.created_at.localtime.strftime('%A, %B %-d, %Y at %l:%M %p') %></p>
-	<p><%= truncate(article.content, length: 200) %></p>
-	<p><%= image_tag article.image.url(:thumb) %></p>
-	<p><%= link_to "View", article_path(article) %></p>
-<% end %>
-
-
-
-<br />
-
-<br />
-
-<% if logged_in? %>
-	<%= link_to "New Article", new_article_path %>
-	Logged in as: <%= current_user.name %> <br/> <%= link_to 'Log Out', logout_path, method: :delete %>
-<% else %>
-	<%= link_to 'New Article', login_path %>
-	<br />
-	<%= link_to 'Log In', login_path %> -- or -- <%= link_to "Sign Up", signup_path %>
-<% end %>
+    
 </div>

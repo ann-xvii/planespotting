@@ -3,284 +3,103 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bourbon/bourbon";
 
-#miami {
-	text-align: center;
-}
-
-// html, body{
-//   padding: 0;
-//   margin: 0;
-//   height: 100%;
+// #map-container {
+//   border: 2px dashed black;
 // }
 
-// html{
-//   font: 1em/1.5 "Lato", sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-rendering: optimizelegibility;
-// }
 
-// body{
-//   font-size: 1.3em;
-// }
+// // d3 styling
 
-// header{
-//   height: 100%;
-//   position: relative;
-//   overflow: hidden;
-//   // background: url(https://dl.dropboxusercontent.com/u/16657557/scripts/blur/bg.jpg) center no-repeat; /* Image Credit: Unsplash.me */
-//   background: url(http://www.worldpropertyjournal.com/news-assets/Aerial-view-of-Mike-Miller-oceanfront-estate.jpg) center no-repeat;
-//   background-size: cover;
-  
-//   .content{
-//     position: absolute;
-//     top: 0; left: 0; right: 0; bottom: 0;
-//     z-index: 1;
-//   }
-  
-//   h1, h2{
-//     margin: 0;
-//   }
-  
-//   h2{
-//     text-transform: uppercase;
-//     margin-top: -.5em;
-//   }
-  
-//   hgroup{
-//     @include transform(translate(-50%, -50%));
-//     display: inline-block;
-//     text-align: center;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     color: #fff;
-//     border: 5px solid #fff;
-//     padding: .5em 3em;
-//     background-color: rgba(0,0,0,.2);
-//     z-index: 2;
-//   }
-  
-//   .overlay{
-//     position: absolute;
-//     top: 0; right: 0; left: 0; bottom: 0;
-//     // background: url(https://dl.dropboxusercontent.com/u/16657557/scripts/blur/bg-blurred.jpg) center no-repeat;
-//     // background: url(http://www.worldpropertyjournal.com/news-assets/Aerial-view-of-Mike-Miller-oceanfront-estate.jpg) center no-repeat;
-//     background: url(https://s3.amazonaws.com/uploads.hipchat.com/39979/1432598/Wrd6M9gGQ2CmUmU/Aerialview.png) center no-repeat;
-//     background-size: cover;
-//     z-index: 0;
-//     opacity: 0;
-//   }
-// }
-
-// .site{
-//   padding: 20em 0;
-//   text-align: center;
-//   background-color: #efefef;
-  
-//   font-size: .8em;
-//   color: #444;
-  
-//   a{
-//     color: #666;
-//     text-decoration: none;
-    
-//     &:hover{
-//       color: #222;
+//     #map {
+//       background-color: #fff;
+//       border: 1px solid #ccc;
 //     }
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-// new
-
-// @import url("http://fonts.googleapis.com/css?family=Lato");
-
-// html, body{
-//   padding: 0;
-//   margin: 0;
-//   height: 100%;
-// }
-
-// html{
-//   font: 1em/1.5 "Lato", sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-rendering: optimizelegibility;
-// }
-
-// body{
-//   font-size: 1.3em;
-// }
-
-// header{
-//   height: 100%;
-//   position: relative;
-//   overflow: hidden;
-//   background: url(https://dl.dropboxusercontent.com/u/16657557/scripts/blur/bg.jpg) center no-repeat; /* Image Credit: Unsplash.me */
-//   background-size: cover;
-  
-//   .content{
-//     position: absolute;
-//     top: 0; left: 0; right: 0; bottom: 0;
-//     z-index: 1;
-//   }
-  
-//   h1, h2{
-//     margin: 0;
-//   }
-  
-//   h2{
-//     text-transform: uppercase;
-//     margin-top: -.5em;
-//   }
-  
-//   hgroup{
-//     @include transform(translate(-50%, -50%));
-//     display: inline-block;
-//     text-align: center;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     color: #fff;
-//     border: 5px solid #fff;
-//     padding: .5em 3em;
-//     background-color: rgba(0,0,0,.2);
-//     z-index: 2;
-//   }
-  
-//   .overlay{
-//     position: absolute;
-//     top: 0; right: 0; left: 0; bottom: 0;
-//     background: url(https://dl.dropboxusercontent.com/u/16657557/scripts/blur/bg-blurred.jpg) center no-repeat;
-//     background-size: cover;
-//     z-index: 0;
-//     opacity: 0;
-//   }
-// }
-
-// .site{
-//   padding: 20em 0;
-//   text-align: center;
-//   background-color: #efefef;
-  
-//   font-size: .8em;
-//   color: #444;
-  
-//   a{
-//     color: #666;
-//     text-decoration: none;
-    
-//     &:hover{
-//       color: #222;
+//     .background {
+//       fill: none;
+//       pointer-events: all;
 //     }
-//   }
+//     #countries, #states {
+//       fill: #cde;
+//       stroke: #fff;
+//       stroke-linejoin: round;
+//       stroke-linecap: round;
+//     }
+//     #countries .active, #states .active {
+//       fill: #89a;
+//     }
+//     #cities {
+//       stroke-width: 0;
+//     }
+//     .city {
+//       fill: #345;
+//       stroke: #fff;
+//     }
+//     pre.prettyprint {
+//       border: 1px solid #ccc;
+//       margin-bottom: 0;
+//       padding: 9.5px;
+//     }
+  
+
+
+
+
+
+
+// SKROLLR PARALLAX EFFECT
+
+// Slide #1 - Fade out elements
+
+/* CSS */
+// .hsContainer {
+//     display: table;
+//     table-layout: fixed;
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+//     position: relative;
+//     opacity: 0;
+// }
+// .hsContent {
+//     max-width: 450px;
+//     margin: -150px auto 0 auto;
+//     display: table-cell;
+//     vertical-align: middle;
+//     color: #ebebeb;
+//     padding: 0 8%;
+//     text-align: center
+// }
+// .bcg {
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     background-size: cover;
+//     height: 100%;
+//     width: 100%;
+// }
+// /* Slide 1 */
+// #slide-1 .bcg {
+//   background-image: url(image_path('morning_sky.jpg'));
+//   background-size: 100% 400px;
+// }
+
+// #planespotting {
+//   margin-bottom: 405px;
 // }
 
 
-.image-wrap {
-position:relative;
-height:500px;
-overflow:hidden
-}
-.regular, .blurred {
-position:absolute;
-width:100%;
-min-height: 600px;
-
--webkit-transform: translate3d(0,0,0);
-}
-.regular {opacity:1;}
-.blurred { opacity:0;}
-
-
-
-.regular {
-  background: url(image_path('Aerial.jpg')) no-repeat center center;
+.plane-header {
   background-size: cover;
-}
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
 
-
-.blurred {
-  background: url(image_path('Aerial-blur.png')) no-repeat center center;
-  background-size: cover;
-}
-
-// #header-text {
-//   z-index: 1;
-//   position: absolute;
-//   top: 0;
-//   width: 100%;
-//   padding: 0 20px;
-// }
-
-.container.home {
-  z-index: 1;
-  background: #fff;
-}
-
-  hgroup{
-    @include transform(translate(-50%, -50%));
-    font-family: Helvetica;
-    font-weight: lighter;
-    display: inline-block;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #fff;
-    border: 5px solid #fff;
-    padding: .5em 3em;
-    background-color: rgba(0,0,0,.2);
-    z-index: 2;
-    h1 {
-      font-size: 80px;
-    }
+  img {
+    margin: 0 auto;
+    width: 100%;
   }
-
-
-#map-container {
-  border: 2px dashed black;
 }
 
-
-// d3 styling
-
-    #map {
-      background-color: #fff;
-      border: 1px solid #ccc;
-    }
-    .background {
-      fill: none;
-      pointer-events: all;
-    }
-    #countries, #states {
-      fill: #cde;
-      stroke: #fff;
-      stroke-linejoin: round;
-      stroke-linecap: round;
-    }
-    #countries .active, #states .active {
-      fill: #89a;
-    }
-    #cities {
-      stroke-width: 0;
-    }
-    .city {
-      fill: #345;
-      stroke: #fff;
-    }
-    pre.prettyprint {
-      border: 1px solid #ccc;
-      margin-bottom: 0;
-      padding: 9.5px;
-    }
-  

@@ -2,5 +2,7 @@
 	<small>
 		The ultimate source of information for general aviation by Anna Atiba
 	</small>
-	
+	<div class="center-debug">
+  		<%= debug(params) if Rails.env.development? %>
+	</div>
 </footer>

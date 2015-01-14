@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ##### CarrierWave Gems #####
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'skrollr-rails'
 
 gem 'fog'         # required for Amazon S3
 gem 'mini_magick' # for post-upload image processing
@@ -10,6 +11,7 @@ gem 'gdal'
 gem 'd3js-rails', '~> 3.1.6'
 gem 'topojson-rails'
 gem 'responders'
+gem 'modernizr-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
