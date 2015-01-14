@@ -23,6 +23,10 @@
     &.index {
     	text-align: center;
     	background-image: url(image_path('users-lobby.jpg'));
+    	a {
+    		color: white;
+    		text-decoration: none;
+    	}
     }
 
     &.edit {
@@ -35,6 +39,20 @@
     	}	
     }
 
+    &.articles-index {
+    	margin-top: 50px;
+    	height: 100vh;
+    }
+
+    &.show-article {
+    	margin-top: 50px;
+    	height: 100vh;
+
+    	a {
+    		color: white;
+    		text-decoration: none;
+    	}
+    }
    
 
 }
