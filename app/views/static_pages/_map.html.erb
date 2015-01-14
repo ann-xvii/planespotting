@@ -199,7 +199,7 @@ $(window).resize(function() {
         var xyz = get_xyz(d);
         country = d;
         if (d.id  == 'USA' || d.id == 'JPN') {
-          d3.json("/states_" + d.id.toLowerCase() + ".topo.json", function(error, us) {
+          d3.json("/states" + d.id.toLowerCase() + ".topo.json", function(error, us) {
             g.append("g")
               .attr("id", "states")
               .selectAll("path")

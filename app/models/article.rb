@@ -6,7 +6,7 @@ class Article
   field :content, type: String
   mount_uploader :image, AvatarUploader
   
-  belongs_to :user
+  belongs_to :user, dependent: :nullify
 
   validates :title, presence: true
   validates :title, length: { minimum: 3 }

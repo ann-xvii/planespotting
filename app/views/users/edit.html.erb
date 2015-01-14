@@ -1,25 +1,23 @@
-<div class="container">
-<h1>Sign Up</h1>
+<div class="container form-group" style="width: 50%;">
+<br/>
+<h1>Edit Your Profile!</h1>
 <%= form_for @user do |f| %>
 	<div>
-		<%= f.label :remove_image %>
-		<%= f.check_box :remove_image %>
-
-		<%= image_tag @user.image.url(:full) %>
-		<%= f.file_field :image %>
-	</div>
-	<div>
 		<%= f.label :name %>
-		<%= f.text_field :name, :value => @user.name %>
+		<%= f.text_field :name, class: 'form-control', :value => @user.name %>
 	</div>
 	<div>
 		<%= f.label :email %>
-		<%= f.text_field :email, :value => @user.email %>
-	</div>
-	
+		<%= f.text_field :email, class: 'form-control', :value => @user.email %>
+	</div>	
 	<div>
 		<%= f.label :image %>
-		<%= f.file_field :image %>
+		<%= f.file_field :image, class: 'form-control' %>
+	</div>
+	<div>
+		<%= f.label :remove_image %>
+		<%= f.check_box :remove_image, class: 'form-control' %>
+		<%= image_tag @user.image.url(:full) %>	
 	</div>
 	<div>
 		<%= f.submit %>

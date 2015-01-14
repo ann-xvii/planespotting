@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   patch 'articles/:id' => 'articles#update'
   delete 'articles/:id' => 'articles#destroy'
 
+  
+
   root "articles#index"
 
   # resources :users, only: [:index, :create]

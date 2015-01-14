@@ -7,7 +7,7 @@ class User
   mount_uploader :image, AvatarUploader
   field :remove_image
   
-  has_many :articles
+  has_many :articles, dependent: :nullify
   attr_reader :password
 
   def password=(unencrypted_password)
