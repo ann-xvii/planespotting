@@ -51,7 +51,7 @@
 
 
 
-    
+
     <!-- ......................... MASONRY BEGIN ......................... -->
     
 
@@ -59,7 +59,8 @@
         <div class="container">
           <!-- Example row of columns -->
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
+                <div class="article-wrapper">
                 <% @articles.each do |article| %>
                     <h2><%= article.title %></h2>
                     <p>Published at <%= article.created_at.localtime.strftime('%A, %B %-d, %Y at %l:%M %p') %></p>
@@ -67,6 +68,7 @@
                     <p><%= image_tag article.image.url(:thumb) %></p>
                     <p><%= link_to "View", article_path(article) %></p>
                 <% end %>
+                </div>
             </div>
           </div> <!-- /row -->
 
