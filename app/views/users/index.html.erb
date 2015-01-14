@@ -17,18 +17,14 @@
 </div>
 
 
-<h1>This is where you'll get to view and edit your individual profile</h1>
+<h3>View and edit your individual profile</h3>
 
-<h1>You'll also get to write and submit articles</h1>
+<h6>Write and submit articles</h6>
 
-<p>Placeholder: apparently, I'll need the links to edit and update articles here</p>
-<p>The link to destroy articles will only be available to administrators</p>
 
 <%= link_to "New Article", new_article_path %>
 <br />
-<br />
 <%= link_to "Articles Index", articles_path %>
-<br />
 <br />
 <% if logged_in? %>
 	<%= link_to "Profile", current_user %><br />

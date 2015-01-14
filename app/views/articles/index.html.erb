@@ -22,7 +22,7 @@
 
         <div id="group2" class="parallax__group" style="height: 90vh;">
             <div class="parallax__layer parallax__layer--base">
-                <div class="title hgroup"><h1>Planespotting.</h1></div>
+                <div class="title hgroup"><h1>Planespotter</h1></div>
             </div>
             <div class="parallax__layer parallax__layer--back" style="-webkit-transform: translateZ(-300px) scale(2);">
                 <div class="title"></div>
@@ -37,8 +37,8 @@
             </div>
         </div>  -->
 
-        <div class="parallax__group" id="black-bar">
-            <div class="parallax__layer .parallax__layer--fore" style="height: 150vh; background: black; -webkit-transform(translateZ(180px) scale(.6)">   
+        <div id="group1" class="parallax__group" id="black-bar">
+            <div class="parallax__layer .parallax__layer--fore" style="height: 60vh; background: black; -webkit-transform(translateZ(180px) scale(.6)">   
             </div>
         </div>
 
@@ -55,12 +55,14 @@
     <!-- ......................... MASONRY BEGIN ......................... -->
     
 
-    <div class="parallax__group">
-        <div class="container">
+    <div id="group4" class="parallax__group">
+    <div class="layer parallax__layer--base">
+        <div class="container" style="margin-top: -40px;">
           <!-- Example row of columns -->
           <div class="row">
-            <div class="col-md-3">
-                <div class="article-wrapper">
+            <div class="col-md-3" style="display: inline-block">
+                <div class="article-wrapper" style="width: 960px">
+                <div style="width: 320px">
                 <% @articles.each do |article| %>
                     <h2><%= article.title %></h2>
                     <p>Published at <%= article.created_at.localtime.strftime('%A, %B %-d, %Y at %l:%M %p') %></p>
@@ -68,6 +70,8 @@
                     <p><%= image_tag article.image.url(:thumb) %></p>
                     <p><%= link_to "View", article_path(article) %></p>
                 <% end %>
+
+                </div>
                 </div>
             </div>
           </div> <!-- /row -->
@@ -75,7 +79,10 @@
           <hr>
         </div> <!-- /container -->
 
-
+</div>
+<div class="parallax__layer parallax__layer--deep">
+    <div style="color: navy"></div>
+</div>
     </div>
 
 
